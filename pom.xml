@@ -75,13 +75,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>me.apemanzilla</groupId>
-			<artifactId>edjournal</artifactId>
-			<version>1.2.0-beta2</version>
-			<type>pom</type>
-		</dependency>
-
 	</dependencies>
 
 	<build>
