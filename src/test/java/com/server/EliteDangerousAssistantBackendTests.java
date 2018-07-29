@@ -1,4 +1,4 @@
-package com.javasampleapproach.angular6;
+package com.server;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class IntegrateSpringBootRestApiAngular6ApplicationTests {
+public class EliteDangerousAssistantBackendTests {
 
 	@Test
 	public void contextLoads() {

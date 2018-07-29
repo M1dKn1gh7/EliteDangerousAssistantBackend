@@ -1,8 +1,8 @@
-package com.javasampleapproach.angular6.restapi;
+package com.endpoint;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
- 
+
 @RestController
 public class RestApiController {
  

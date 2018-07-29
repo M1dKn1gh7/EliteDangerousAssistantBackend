@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.javasampleapproach.angular6</groupId>
-	<artifactId>IntegrateSpringBootRestApiAngular6</artifactId>
+	<groupId>com.elitedangerousassistantbackend</groupId>
+	<artifactId>EliteDangerousAssistantBackend</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>IntegrateSpringBootRestApiAngular6</name>
-	<description>Building a web-application that integrates SpringBoot RestAPI with Angular 6 - using SpringToolSuite - SpringBoot 2.0</description>
+	<name>Elite Dangerous: Assistant Backend</name>
+	<description>Backend of an application to assist in the playing of Elite: Dangerous</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
