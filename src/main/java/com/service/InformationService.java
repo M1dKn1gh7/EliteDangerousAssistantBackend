@@ -5,6 +5,7 @@ import me.apemanzilla.edjournal.events.JournalEvent;
 import org.springframework.stereotype.Component;
 
 import java.util.Comparator;
+import java.util.NoSuchElementException;
 
 @Component
 public class InformationService {
@@ -19,8 +20,7 @@ public class InformationService {
        JournalEvent mostRecent = this.edJournalService.getJournalInstance()
                 .events()
                 .max(Comparator.comparing(JournalEvent::getTimestamp))
-                .get();
-       //creation point
-       return null;
+                .orElseThrow(NoSuchElementException::new);
+       return Report.from(mostRecent);
     }
 }
