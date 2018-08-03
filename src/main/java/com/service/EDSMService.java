@@ -10,13 +10,14 @@ public class EDSMService {
      * Service designed to call the https://www.edsm.net/en_GB/api-v1 service
      * **/
 
-    final static String EDSM_URL = "https://www.edsm.net/en_GB/api-v1/system?systemName=";
-    final static String showId  = "&showId=1";
-    final static String showCoordinates = "&showCoordinates=1";
-    final static String showPermit = "&showPermit=1";
-    final static String showInformation = "&showInformation=1";
-    final static String showPrimaryStar = "&showPrimaryStar=1";
-    final static String includeHidden = "includeHidden=1";
+    private final static String EDSM_URL = "https://www.edsm.net/en_GB/api-v1/system?systemName=";
+    private final static String showId  = "&showId=1";
+    private final static String showCoordinates = "&showCoordinates=1";
+    private final static String showPermit = "&showPermit=1";
+    private final static String showInformation = "&showInformation=1";
+    private final static String showPrimaryStar = "&showPrimaryStar=1";
+    private final static String includeHidden = "includeHidden=1";
+    public static  final String STAR_IMAGE_URL = "https://www.edsm.net/img/bodies/stars/";
 
     private final RestTemplate restTemplate;
 

@@ -25,14 +25,16 @@ public class SystemReportService {
     }
 
     private String buildStarImageUrl(int spectralId) {
-        return null;
+        return EDSMService.STAR_IMAGE_URL + spectralId + ".png";
     }
 
     private Integer lookUpSpectralId(String spectralClass) {
+        //look at the returned report from edsm, lookup the star class in a db table with ids and the id that matches is the right one
         return 0;
     }
 
     private String lookUpSpectralClass(String currentSystemName) {
+        //call edsm and get its report and pull it from there
         return null;
     }
 
