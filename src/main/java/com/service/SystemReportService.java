@@ -16,20 +16,19 @@ public class SystemReportService {
     }
 
     public SystemReport getCurrentSystem(){
-        String currentSystemName = getCurrentSystemName();
-        String spectralClass = lookUpSpectralClass(currentSystemName);
-        int spectralId = lookUpSpectralId(spectralClass);
-        return new SystemReport(getCurrentSystemName(),
-                lookUpSpectralClass(currentSystemName),
-                lookUpSpectralId(spectralClass),
-                buildStarImageUrl(spectralId));
+        String currentSystemName = "Maia";
+
+        return new SystemReport.SystemReportBuilder(currentSystemName)
+                .withSpectralClass(lookUpSpectralClass(currentSystemName))
+                .withSpectralId(lookUpSpectralId(lookUpSpectralClass(currentSystemName)))
+                .withStarImageUrl(buildStarImageUrl(lookUpSpectralId(lookUpSpectralClass(currentSystemName)))).build();
     }
 
     private String buildStarImageUrl(int spectralId) {
         return null;
     }
 
-    private int lookUpSpectralId(String spectralClass) {
+    private Integer lookUpSpectralId(String spectralClass) {
         return 0;
     }
 
